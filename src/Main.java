@@ -14,8 +14,8 @@ public class Main {
 
         show(arrayToSort);
 
-        sorter sorterAlgoritm = new insertion(arrayToSort);
+        sorter sorterAlgorithm = new insertion(arrayToSort);
 
-        show(sorterAlgoritm.getArray());
+        show(sorterAlgorithm.getArray());
     }
 }
