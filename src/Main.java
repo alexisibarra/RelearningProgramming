@@ -1,16 +1,21 @@
+import sorting.selection;
+import sorting.sorter;
+
+import java.util.List;
+
 import static filemanagement.manager.getArray;
+import static sorting.utils.show;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Comparable[] arrayToSort = getArray(args);
+        List<Comparable> arrayToSort = getArray(args);
 
-        sorting.selection.show(arrayToSort);
+        show(arrayToSort);
 
-        sorting.selection.sort(arrayToSort);
+        sorter sorterAlgoritm = new selection(arrayToSort);
 
-        sorting.selection.show(arrayToSort);
-        assert sorting.selection.isSorted(arrayToSort);
+        show(sorterAlgoritm.getArray());
     }
 }
