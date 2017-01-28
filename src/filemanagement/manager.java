@@ -10,7 +10,7 @@ import java.util.Scanner;
  * Created by alexis on 23/01/17.
  */
 public class manager {
-    public static Comparable[] getArray(String[] args){
+    public static List<Comparable> getArray(String[] args){
         List<Comparable> listToSort = new ArrayList<>();
 
         try {
@@ -27,7 +27,6 @@ public class manager {
             System.exit(0);
         }
 
-        Comparable[] arrayToSort = new Comparable[listToSort.size()];
-        return listToSort.toArray(arrayToSort);
+        return listToSort;
     }
 }
