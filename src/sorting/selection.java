@@ -11,10 +11,10 @@ public class selection extends sorter{
             int min = i;
 
             for (int j=i+1; j < N; j++)
-                if(less(a[j], a[min]))
+                if(isLessThan(a[j], a[min]))
                     min = j;
 
-            exch(a, i, min);
+            swap(a, i, min);
         }
     }
 }
