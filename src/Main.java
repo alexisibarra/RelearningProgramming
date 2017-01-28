@@ -1,4 +1,4 @@
-import sorting.selection;
+import sorting.*;
 import sorting.sorter;
 
 import java.util.List;
@@ -14,7 +14,7 @@ public class Main {
 
         show(arrayToSort);
 
-        sorter sorterAlgoritm = new selection(arrayToSort);
+        sorter sorterAlgoritm = new insertion(arrayToSort);
 
         show(sorterAlgoritm.getArray());
     }
