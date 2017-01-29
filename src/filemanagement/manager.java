@@ -1,5 +1,7 @@
 package filemanagement;
 
+import sorting.card;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -10,7 +12,7 @@ import java.util.Scanner;
  * Created by alexis on 23/01/17.
  */
 public class manager {
-    public static List<Comparable> getArray(String[] args){
+    public static List<Comparable> getArray(String[] args, String type){
         List<Comparable> listToSort = new ArrayList<>();
 
         try {
@@ -18,7 +20,12 @@ public class manager {
             Scanner sc = new Scanner(x);
 
             while(sc.hasNext()) {
-                listToSort.add(sc.next());
+                if (type.equals("cards")){
+                    listToSort.add(new card(sc.next()));
+                    continue;
+                }
+
+                listToSort.add(Integer.parseInt(sc.next()));
             }
             sc.close();
         }
