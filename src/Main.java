@@ -16,9 +16,5 @@ public class Main {
         sorter sorterAlgorithm = new insertion(arrayToSort);
 
         show(sorterAlgorithm.getArray());
-
-//        TODO: generate random deck
-//        long seed = System.nanoTime();
-//        Collections.shuffle(arrayToSort, new Random(seed));
     }
 }
