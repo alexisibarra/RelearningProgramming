@@ -9,12 +9,15 @@ import static sorting.utils.show;
 public class Main {
 
     public static void main(String[] args) {
-        List<Comparable> arrayToSort = getArray(args, "integers");
+//        List<Comparable> arrayToSort = getArray(args, "integers");
 
-        show(arrayToSort);
+        deck deck = new deck();
+        deck.mess();
 
-        sorter sorterAlgorithm = new insertion(arrayToSort);
+        show(deck);
 
-        show(sorterAlgorithm.getArray());
+//        sorter sorterAlgorithm = new insertion(arrayToSort);
+
+//        show(sorterAlgorithm.getArray());
     }
 }
