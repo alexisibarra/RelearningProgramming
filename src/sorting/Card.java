@@ -3,11 +3,11 @@ package sorting;
 /**
  * Created by alexis on 29/01/17.
  */
-public class card implements Comparable<card>{
+public class Card implements Comparable<Card>{
     String rank;
     char suit;
 
-    public card(String cardString) {
+    public Card(String cardString) {
         int cardStringLength = cardString.length();
 
         String suitString = cardString.substring(0, cardStringLength - 1);
@@ -60,7 +60,7 @@ public class card implements Comparable<card>{
     }
 
     @Override
-    public int compareTo(card that) {
+    public int compareTo(Card that) {
         if (this.getSuit() > that.getSuit())
             return +1;
         if (this.getSuit() < that.getSuit())

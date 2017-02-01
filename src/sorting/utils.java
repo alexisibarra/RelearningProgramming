@@ -17,8 +17,8 @@ public class utils {
         a.set(i, a.get(j));
         a.set(j, t);
     }
-    public static void show(deck a) {
-        for (card anA : a.get()) System.out.print(anA + " ");
+    public static void show(Deck a) {
+        for (Card anA : a.get()) System.out.print(anA + " ");
             System.out.println();
     }
     public static void show(List<Comparable> a) {
