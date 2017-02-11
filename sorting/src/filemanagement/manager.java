@@ -1,6 +1,6 @@
 package filemanagement;
 
-import sorting.card;
+import sorting.Card;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -21,7 +21,7 @@ public class manager {
 
             while(sc.hasNext()) {
                 if (type.equals("cards")){
-                    listToSort.add(new card(sc.next()));
+                    listToSort.add(new Card(sc.next()));
                     continue;
                 }
 
